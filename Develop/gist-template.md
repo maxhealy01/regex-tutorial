@@ -1,10 +1,14 @@
 # Title (replace with your title)
 
-Introductory paragraph (replace this with your text)
+In this tutorial, I'm going to introduce one of the more commonly used Regular Expressions and, by describing how it works, explain some important regex concepts.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+We will be walking through the following regex, explaining what each component does.
+
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+
+This regex makes sure that the given string matches the template for an email address.
 
 ## Table of Contents
 
@@ -23,6 +27,16 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
+
+The two anchors in regex are ^ and $.
+
+^ means that the following code must appear at the beginning of the string.
+
+$ means that the preceding code must appear at the end of the string.
+
+Because our regular expression contains both, a given string must match all the given specifications exactly, or it won't be a match.
+
+Although this sounds limiting, you will see how quantifiers, grouping and bracket expressions allow a large range of variation in the given string.
 
 ### Quantifiers
 
